@@ -3,7 +3,7 @@ variable "region" {
 }
 
 variable "gcp_project" {
-  default = ""
+  default = "My First Project"
 }
 
 variable "name"{
