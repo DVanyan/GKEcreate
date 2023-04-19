@@ -13,3 +13,7 @@ variable "name"{
 variable "subnet_cidr"{
   default = "0.0.0.0/32"
 }
+
+variable "zone" {
+  default = "us-central1-b"
+}
