@@ -17,3 +17,7 @@ variable "subnet_cidr"{
 variable "zone" {
   default = "us-central1-b"
 }
+
+variable "secret_cloud_token" {
+  default = "text"
+}
