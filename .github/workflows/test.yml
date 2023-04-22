@@ -4,19 +4,8 @@ on:
   push:
     branches:
       - main
-jobs:
-  set-matrix:
-    runs-on: ubuntu-latest
-
-    outputs:
-      workdir: ${{ steps.set_matrix.outputs.matrix-workdir }}
-
-    steps:
-
-      - name: Set matrix
-        id: set_matrix
-        uses: DVanyan/GKEcreate@main
   
+jobs:
   terraform:
     name: 'Terraform'
     runs-on: ubuntu-latest
