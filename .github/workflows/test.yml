@@ -18,15 +18,6 @@ jobs:
       - name: Set matrix
         id: set_matrix
         uses: DVanyan/GKEcreate@main
-
-  plan:
-    needs: [set-matrix]
-    name: terraform plan
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        workdir: ${{fromJson(needs.set-matrix.outputs.workdir)}}
   
   terraform:
     name: 'Terraform'
