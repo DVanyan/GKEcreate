@@ -28,7 +28,6 @@ jobs:
       matrix:
         workdir: ${{fromJson(needs.set-matrix.outputs.workdir)}}
   
-jobs:
   terraform:
     name: 'Terraform'
     runs-on: ubuntu-latest
